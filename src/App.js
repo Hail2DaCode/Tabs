@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Tabs from './components/Tabs';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Tabs items = 
+      { 
+        [
+          {label: "Tyrion Lannister", content: "Dwarf born in Casterly Rock who loves to read."}, 
+          {label: "Bran Stark", content: "Son of Ned Stark and brother to Robert Stark. He loves to climb and his pet direwolf!"}, 
+          {label: "Brienne Tarth", content: "A princess of Tarth that wants to be a knight!"}
+        ] } />
     </div>
   );
 }
